@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taskmanager</title>
+    <link rel="stylesheet" href="html.css">
+</head>
+<body style="background-color:bisque;">
+    <div>
+
+        <h1 class="heading"><span class="lo"><img src="logo\logo2.png" width="40px"></span> TASK MANAGER</h1>
+
+        <div class="watch">
+            <div id="ti">
+               00:00:00
+             </div>
+             <button onclick="start()" id="stop">Start</button>
+             <button onclick="reset()">Reset</button>  
+             <div>
+           </div>
+
+<div class="addinput">
+    <label>TASK:</label>
+    <input type="text" placeholder="Enter task">
+    <label>DESCRIPTION:</label>
+    <input type="text" placeholder="Enter task">
+    <button>Add</button>
+</div>
+
+    <label class="lbl"> <span class="sp1">Select Task:</span>
+        <select id="select-list" >
+         <option>Meeting</option>
+         <option>Gym</option>
+         <option>Homework</option>
+         <option>Education</option>
+         <option>Class</option>
+        </select>
+     <button id="btnfil" class="btnsea">Filter</button>
+     <button id="btndel" class="btnde">Delete</button>
+ </label>
+ 
+ <!-- <div class="addbtn"> <input class="taskinput"   type="text" placeholder="Add Task" >
+    <input class="Descriptioninput"   type="text" placeholder="Add Description"></div> -->
+        <table class="fulltbl" >
+        <thead>
+            <tr class="tblrow">
+                <th>Task</th>
+                <th>Description</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody id="list"></tbody>
+        
+    </table>
+    <script src="html.js"></script>
+</body>
+</html>
